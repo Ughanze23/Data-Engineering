@@ -2,24 +2,24 @@
 
 # Project Description
  Modeling a Postgres database for Sparkify, A music streaming Start-up. The goal of this project is to model
- a relational database for Sparkify and build an ETL pipeline using Python,that transfers data from files in two local directories into tables that store User information and music streams log data,The Data analysts at Sparkify can then query this data and derive insights on what songs users are listening to and on Business performance.
+ a relational database for Sparkify and build an ETL pipeline using Python,that transfers data from files in two local directories into tables that store User information and music streams log data,The Data analysts at Sparkify can then query this data and derive insights on what songs users are listening to and report on business performance.
  
  # Data base Schema
- The SparkifyDb database is a star schema design, containg the following fact and dimension tables:
+ The SparkifyDb database is a star schema design, contains the following fact and dimension tables:
 
 ### Fact Table
-songplays - records in log data dataset associated with song plays
+songplays - records log data dataset associated with song plays in app <br>
 songplay_id, start_time, user_id, level, song_id, artist_id, session_id, location, user_agent
 
 ### Dimension Tables
 1. users - users in the app
- columns - user_id, first_name, last_name, gender, level
+ columns : user_id, first_name, last_name, gender, level
 2. songs - songs in music database
-columns - song_id, title, artist_id, year, duration
+columns : song_id, title, artist_id, year, duration
 3. artists - artists in music database
-columns - artist_id, name, location, latitude, longitude
+columns : artist_id, name, location, latitude, longitude
 4. time - timestamps of records in songplays broken down into specific units
-columns - start_time, hour, day, week, month, year, weekday
+columns : start_time, hour, day, week, month, year, weekday
  
  
  # How it works
